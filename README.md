@@ -6,7 +6,7 @@ Contact:  dalyc24@tcd.ie
 
 -----------------------------------------------------------------------------------
 
-## Keywords: Enterprise Search, Ranking, Datasets, LambdaMart
+## Keywords: Enterprise Search, Ranking, LambdaMart, XGBoost
 
 This repository was cited in the paper **"LEARNING TO RANK: PERFORMANCE AND PRACTICAL BARRIERS TO DEPLOYMENT IN ENTERPRISE SEARCH"**, which is published in the 12TH International Conference on Industrial Technology and Management (Cambridge, ICITM 2023)
 
