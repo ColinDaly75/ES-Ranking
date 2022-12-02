@@ -6,13 +6,20 @@ Contact:  dalyc24@tcd.ie
 
 -----------------------------------------------------------------------------------
 
-# Keywords: Enterprise Search Ranking, Corpus, Datasets and Code
+# Keywords: Enterprise Search Ranking, Datasets, Alogorithms and Code
 
 This repository was cited in the paper **"LEARNING TO RANK: PERFORMANCE AND PRACTICAL BARRIERS TO DEPLOYMENT IN ENTERPRISE SEARCH"** in the 12TH International Conference on Industrial Technology and Management (Cambridge, ICITM 2023)
 
 # Dataset
-We use the small, manually annotated LTR dataset (ENTRP-SRCH.txt) includes a number of features used for learning to rank.  The LTR dataset is formatted as follows: -
-![LETOR_format_diagram-with-clickthroughrate](https://user-images.githubusercontent.com/51714656/184387570-87e33de2-a985-4d8f-8a71-4cd7f43bb87a.png)The dataset is named ENTRP-SRCH and is in LETOR format.  
+We use the small, manually annotated LTR dataset called ENTRP-SRCH.txt (attached) which includes a number of features used for learning to rank. Feature include: -
++ BM25 (applied to title, body and URL)
++ documentRecency (last modification date). 
++ isContact (url contains the word 'contact'). 
++ isAbout (url contains keyword 'about').
++ rawHits (a measure of document popularity). 
++ urlLength (number of terms in url path hierarchy).
++ LinkRank (similar to PageRank algorithm). 
++ clickThru (A score of the number of document click through rate by end-users, for the given qid).
 
 
 
