@@ -1,4 +1,4 @@
-# Enterprise Search Ranking study
+# Enterprise Search: Ranking Performance in Practice
 
 -----------------------------------------------------------------------------------
 
@@ -8,7 +8,7 @@ Contact:  dalyc24@tcd.ie
 
 ## Keywords: Enterprise Search, Ranking, Datasets, LambdaMart
 
-This repository was cited in the paper **"LEARNING TO RANK: PERFORMANCE AND PRACTICAL BARRIERS TO DEPLOYMENT IN ENTERPRISE SEARCH"**, which was published in the 12TH International Conference on Industrial Technology and Management (Cambridge, ICITM 2023)
+This repository was cited in the paper **"LEARNING TO RANK: PERFORMANCE AND PRACTICAL BARRIERS TO DEPLOYMENT IN ENTERPRISE SEARCH"**, which is published in the 12TH International Conference on Industrial Technology and Management (Cambridge, ICITM 2023)
 
 ## Dataset
 We use the small, manually annotated LTR dataset called ENTRP-SRCH.txt (attached) which includes a number of features used for learning to rank. Feature include: -
