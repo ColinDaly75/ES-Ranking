@@ -1,0 +1,26 @@
+{
+    "class" : "org.apache.solr.ltr.model.LinearModel",
+    "name" : "myCombinedModel",
+    "store" : "myCombinedFeaturesStore",
+    "features" : [
+      { "name" : "originalScore" },
+      { "name" : "documentRecency" },
+      { "name" : "isAbout" },
+      { "name" : "isContact" },
+      { "name" : "rawHits" },
+      { "name" : "urlLength" },
+      { "name" : "linkRank" }
+    ],
+    "params" : {
+      "weights" : {
+        "originalScore" : 60.0,
+        "documentRecency" : 10.0,
+        "isAbout" : 20.0,
+        "isContact" : 20.0,
+        "rawHits" : 5.0,
+        "urlLength" : -35.0,
+        "linkRank" : 15.0
+      }
+    }
+  }
+  

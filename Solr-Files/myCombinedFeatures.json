@@ -1,0 +1,57 @@
+
+[
+  {
+    "store" : "myCombinedFeaturesStore",
+    "name" : "originalScore",
+    "class" : "org.apache.solr.ltr.feature.OriginalScoreFeature",
+    "params" : {}
+  },
+  {
+    "store" : "myCombinedFeaturesStore",
+    "name":  "documentRecency",
+    "class": "org.apache.solr.ltr.feature.SolrFeature",
+    "params": {
+      "q": "{!func}recip( ms(NOW,pubdate), 3.16e-11, 1, 1)"
+        }
+  },
+  {
+    "store" : "myCombinedFeaturesStore",
+    "name" : "isContact",
+    "class" : "org.apache.solr.ltr.feature.SolrFeature",
+    "params" : {
+      "fq": ["{!terms f=title}contact"]
+        }
+  },
+  {
+    "store" : "myCombinedFeaturesStore",
+    "name" : "isAbout",
+    "class" : "org.apache.solr.ltr.feature.SolrFeature",
+    "params" : {
+      "fq": ["{!terms f=title}about"]
+        }
+  },
+  {
+    "store" : "myCombinedFeaturesStore",
+    "name":  "rawHits",
+    "class": "org.apache.solr.ltr.feature.SolrFeature",
+    "params": {
+      "q": "{!func}popularity"
+        }
+  },
+  {
+     "store" : "myCombinedFeaturesStore",
+     "name":  "urlLength",
+     "class": "org.apache.solr.ltr.feature.FieldLengthFeature",
+     "params": {
+        "field": "url"
+        }
+  },
+  {
+    "store" : "myCombinedFeaturesStore",
+    "name":  "linkRank",
+    "class": "org.apache.solr.ltr.feature.FieldValueFeature",
+    "params": {
+      "field": "linkrank"
+        }
+  }
+]
